@@ -1,0 +1,9 @@
+show dbs
+use myUberApp
+show collections
+mongoimport --db myUberApp --collection policeData --drop --file ./data/cop.json
+ db.policeData.find().pretty()
+ db.policeData.find({userId:"04"})
+
+
+https://medium.freecodecamp.org/how-to-build-your-own-uber-for-x-app-part-2-8ba6ffa2573d
